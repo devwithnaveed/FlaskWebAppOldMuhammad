@@ -22,7 +22,7 @@ jobs:
 
       - name: List Files
         run: |
-          echo "Naveed is learning"
+          ech "Naveed is learning"
           ls -la
       - name: Install Dependencies
         run: |
