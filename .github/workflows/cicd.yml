@@ -59,4 +59,4 @@ jobs:
         with:
           app-name: "naveednewtest"
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-          images: "${{ secrets.MUHAMMAD_NAVEED_USERNAME }}/devops:${{ github.sha }}"
+          images: "${{ secrets.MUHAMMAD_NAVEED_USERNAME }}/my-python-app-naveed:${{ github.sha }}"
