@@ -51,12 +51,12 @@ jobs:
 
       - name: Build and Push Image
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/my-python-app-naveed:${{ github.sha }} .
-          docker push ${{ secrets.DOCKER_USERNAME }}/my-python-app-naveed:${{ github.sha }}
+          docker build -t ${{ secrets.MUHAMMAD_NAVEED_USERNAME }}/my-python-app-naveed:${{ github.sha }} .
+          docker push ${{ secrets.MUHAMMAD_NAVEED_USERNAME }}/my-python-app-naveed:${{ github.sha }}
 
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2
         with:
           app-name: "dv-cute-perch"
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-          images: "${{ secrets.DOCKER_USERNAME }}/devops:${{ github.sha }}"
+          images: "${{ secrets.MUHAMMAD_NAVEED_USERNAME }}/devops:${{ github.sha }}"
