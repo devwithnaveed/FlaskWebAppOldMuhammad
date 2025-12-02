@@ -35,12 +35,12 @@ def about():
         year=datetime.now().year,
         message='Your application description page.'
     )
-@app.route('/naveed_riaz')
-def about():
-    """Renders the Naveed's Page."""
+
+@app.route('/naveed-riaz')
+def muhammad_naveed():
+    """Renders the Naveed Riaz page."""
     return render_template(
-        'naveed_riaz.html',
+        'naveed-riaz.html',
         title='Naveed Riaz',
         year=datetime.now().year,
-        message='Your application description page.'
     )
